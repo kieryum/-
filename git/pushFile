@@ -1,0 +1,38 @@
+##github复习
+
+#初始化GitHub仓库
+
+&>git init
+
+#配置用户个人信息
+
+&>git config user.name "用户名字"
+&>git config user.email "2199138345@qq.com"
+
+#编写提交文件
+
+&>vim test.txt
+
+#添加到缓存区
+
+&>git add test.txt
+
+#可以查看一下添加的文件状态
+
+&>git status
+
+#将缓存提交到本地仓库
+
+&>git commit -m "描述（必须）"
+
+#增加远程仓库 并且命名字(origin)
+
+&>git remote add origin https://github.com/kieryum/uploadFileSystem.git
+
+#推送本地仓库到远程仓库
+
+git push origin master 
+
+#参考文档
+
+www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
