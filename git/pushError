@@ -1,0 +1,5 @@
+如果不代码部分提交，在提交的话会出错：可以使用强制提交  $ git push -f
+
+可以使用这个方式提交：先使用git fetch 到本地 之后在merge ,然后在push
+$ git fetch
+$ git merge
