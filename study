@@ -1,1 +1,15 @@
+学习网站：
 http://30daydo.com/
+学习网站：
+runoob
+pip升级出错：
+  把原来的pip执行文件修改
+  from pip import main
+  if __name__ == '__main__':
+      sys.exit(main())
+  
+  
+  修改为
+  from pip import __main__
+  if __name__ == '__main__':
+      sys.exit(__main__._main())
