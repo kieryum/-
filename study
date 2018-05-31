@@ -2,7 +2,7 @@
 http://30daydo.com/
 学习网站：
 runoob
-pip升级出错：
+[201805300154]pip升级出错：
   把原来的pip执行文件修改
   from pip import main
   if __name__ == '__main__':
