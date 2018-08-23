@@ -36,3 +36,10 @@ git push origin master
 #参考文档
 
 www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
+
+
+注意：提交一般提交不成功
+
+需要向pull 在push
+但是在pull的时候他会报错：不能pull一个不相关的库，这时需要 git pull origin master --allow-unrelated-histories   
+origin 是上面设置的（git remote add orgin https://xxxxx.git）
