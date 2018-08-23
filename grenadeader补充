@@ -1,0 +1,41 @@
+1、idea安装插件
+<plugins>
+  <plugin>
+      <groupId>org.mybatis.generator</groupId>
+      <artifactId>mybatis-generator-maven-plugin</artifactId>
+      <version>1.3.2</version>
+      <configuration>
+         <verbose>true</verbose>
+          <overwrite>true</overwrite>
+      </configuration>
+  </plugin>
+</plugins>
+
+2、安装插件需要pom.xml文件要没有任何一点错误和maven错误，在这过过程中需要下载很多东西
+3、配置genderator.xml文件
+注意：需要导入属性文件
+<properties resource="generator.properties"></properties>
+
+4、配置genderator.properties
+jdbc.driverLocation=E://maven/repository/mysql/mysql-connector-java/5.1.37/mysql-connector-java-5.1.37.jar
+jdbc.driverClass=com.mysql.jdbc.Driver
+jdbc.connectionURL=jdbc:mysql://127.0.0.1:3306/taotao
+jdbc.userId=root
+jdbc.password=
+
+注意：genderator.properties 后面的路径需要Linux的文件路径window文件路径会报错
+
+5、配置maven
+配置run/deDbug Configuration (不知道路径的话：就是java运行常用按键的，那里有个倒三角，那里可以进入，进去配置运行)
+进入后点击绿色+好 找到maven
+点击Parmeters
+配置working directory 选择你要生成的maven项目或者非maven项目
+配置Command line mybatis-generator:generate -e  （目前还不知道这个是干什么的，也不知道这个还有其他的命令，照写吧）
+
+补充：
+在安装插件后或者编辑完genderator.xml 后可能会生成application 这个运行（目前只知道这个可以删除）
+
+6.选择这个maven ，点击绿色的运行按钮，然后生成
+
+后话：
+对于怎么样生成xml和pojo以及mysql数据表，可以另行学习，在上一层目录中有源文件，里面注释很详细
