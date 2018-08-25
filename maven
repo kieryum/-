@@ -1,3 +1,8 @@
+
+maven 项目官方是建议资源文件是放在resources下，不会去扫描src/main/java文件
+在这样的环境下我们去整合spring 和 mybatis的时候就会扫描不到xml文件
+我们要到pom.xml文件中去插入下面这段描述
+
 <build>
     <finalName>mapperxml</finalName>
     <resources>
