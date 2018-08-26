@@ -1,0 +1,9 @@
+
+spring 如果需要用responseBody转换成json数据格式的话，需要添加下面的这个jar包
+
+<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.9.6</version>
+</dependency>
